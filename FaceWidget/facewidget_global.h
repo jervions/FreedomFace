@@ -1,0 +1,12 @@
+#ifndef FACEWIDGET_GLOBAL_H
+#define FACEWIDGET_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(FACEWIDGET_LIBRARY)
+#  define FACEWIDGETSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define FACEWIDGETSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // FACEWIDGET_GLOBAL_H
